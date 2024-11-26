@@ -12,3 +12,7 @@ For the GUI, I have utilized the Tkinter library for simplicity and efficiency.
 
 ![Screenshot 2024-11-27 004606](https://github.com/user-attachments/assets/0cda0958-89ea-4191-afaa-e5b9bd498413)
 ![Screenshot 2024-11-27 002302](https://github.com/user-attachments/assets/67e81454-7016-4a9b-879f-cddc5afb8254)
+
+We can consider the Graph or the Minimized DFA as the Scanner
+whereas for our generated codes or enumerated strings, those are the acceptable codes
+for the scanner to base off.
