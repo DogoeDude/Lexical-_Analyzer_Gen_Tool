@@ -3,13 +3,10 @@ from RGX_NFA import regex_to_nfa  # Import regex-to-NFA function
 
 def nfa_to_dfa(nfa):
     try:
-        # Convert the NFA to DFA
+        # Convert the NFA to DFA (no minimization)
         dfa = nfa.toDFA()
         
-        # Minimize the DFA
-        minimized_dfa = dfa.minimal()
-        
-        return minimized_dfa
+        return dfa
     except Exception as e:
         print(f"Error during NFA to DFA conversion: {e}")
         return None
@@ -22,11 +19,11 @@ if __name__ == "__main__":
     nfa = regex_to_nfa(regex)
     
     if nfa:
-        # Convert NFA to DFA
+        # Convert NFA to DFA (without minimization)
         dfa = nfa_to_dfa(nfa)
         
         if dfa:
-            print("Minimized DFA Generated from NFA:")
+            print("DFA Generated from NFA:")
             dfa.display()  # Display DFA details
 
             # DFA States
