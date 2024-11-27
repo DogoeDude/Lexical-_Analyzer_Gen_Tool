@@ -286,24 +286,28 @@ class DFAScannerApp:
         if not self.minimized_dfa or length <= 0:
             return None
 
-        current_state = self.minimized_dfa.Initial
-        generated_string = ""
+        for _ in range(100):  # Attempt up to 100 times to find a valid string
+            current_state = self.minimized_dfa.Initial
+            generated_string = ""
 
-        for _ in range(length):
-            # Check if there are valid transitions from the current state
-            if current_state not in self.minimized_dfa.delta or not self.minimized_dfa.delta[current_state]:
-                return None  # No valid transitions
+            for _ in range(length):
+                # Check if there are valid transitions from the current state
+                if current_state not in self.minimized_dfa.delta or not self.minimized_dfa.delta[current_state]:
+                    break  # No valid transitions, abandon this attempt
 
-            # Choose a random valid transition
-            valid_transitions = list(self.minimized_dfa.delta[current_state].items())
-            symbol, next_state = random.choice(valid_transitions)
-            generated_string += symbol
-            current_state = next_state
+                # Choose a random valid transition
+                valid_transitions = list(self.minimized_dfa.delta[current_state].items())
+                symbol, next_state = random.choice(valid_transitions)
+                generated_string += symbol
+                current_state = next_state
 
-        # Verify the string ends in a final state
-        if current_state not in self.minimized_dfa.Final:
-            return None  # The generated string is invalid
-        return generated_string
+            # Verify the string ends in a final state
+            if current_state in self.minimized_dfa.Final:
+                return generated_string
+
+        # If no valid string is found after 100 attempts, return None
+        return None
+
 
 
     def generate_enumerated_codes(self, length):
