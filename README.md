@@ -18,6 +18,8 @@ whereas for our generated codes or enumerated strings, those are the acceptable 
 for the scanner to base off.
 
 Redefined the UI and Fixed some bugs:
+
+
 ![Screenshot 2024-11-27 161729](https://github.com/user-attachments/assets/df17a782-0cde-4589-8d51-c65c220263b3)
 ![Screenshot 2024-11-27 161720](https://github.com/user-attachments/assets/3a2f8b9a-ba2a-43d8-8476-1e416b01541d)
 ![Screenshot 2024-11-27 161705](https://github.com/user-attachments/assets/4d21395c-e36a-4df2-a35a-3d071030c5e4)
