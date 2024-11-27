@@ -1,6 +1,6 @@
 from FAdo.fa import *  # Import FAdo automata library
 from RGX_NFA import regex_to_nfa  # Import regex-to-NFA function
-
+#test
 def nfa_to_dfa(nfa):
     try:
         # Convert the NFA to DFA (no minimization)

@@ -1,7 +1,7 @@
 from FAdo.fa import *  # Import FAdo automata library
 from NFA_DFA import nfa_to_dfa  # Import the function for NFA to DFA conversion
 from RGX_NFA import regex_to_nfa  # Import the function for regex to NFA conversion
-
+#test
 def minimize_dfa(dfa):
     """
     Minimize a given DFA.

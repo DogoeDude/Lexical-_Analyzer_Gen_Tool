@@ -1,6 +1,6 @@
 from FAdo.reex import str2regexp
 from FAdo.fa import *
-
+#test
 def regex_to_nfa(regex):
     try:
         # Parse the regex into a FAdo regex object
