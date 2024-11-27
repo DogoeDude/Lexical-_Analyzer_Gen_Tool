@@ -16,3 +16,12 @@ For the GUI, I have utilized the Tkinter library for simplicity and efficiency.
 We can consider the Graph or the Minimized DFA as the Scanner
 whereas for our generated codes or enumerated strings, those are the acceptable codes
 for the scanner to base off.
+
+Redefined the UI and Fixed some bugs:
+![Screenshot 2024-11-27 161729](https://github.com/user-attachments/assets/df17a782-0cde-4589-8d51-c65c220263b3)
+![Screenshot 2024-11-27 161720](https://github.com/user-attachments/assets/3a2f8b9a-ba2a-43d8-8476-1e416b01541d)
+![Screenshot 2024-11-27 161705](https://github.com/user-attachments/assets/4d21395c-e36a-4df2-a35a-3d071030c5e4)
+![Screenshot 2024-11-27 161651](https://github.com/user-attachments/assets/b9a487b4-c9fe-4671-9b89-e1daf514c129)
+![Screenshot 2024-11-27 161552](https://github.com/user-attachments/assets/385d5908-2eb0-4bb2-a8f8-2a72bc6ba65f)
+
+Currently fixing the random string generator
