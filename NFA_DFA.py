@@ -13,7 +13,7 @@ def nfa_to_dfa(nfa):
 
 if __name__ == "__main__":
     # Example regex
-    regex = "a(bc)*"
+    regex = "a(b|c*)"
     
     # Generate NFA from regex
     nfa = regex_to_nfa(regex)
