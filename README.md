@@ -27,3 +27,4 @@ Redefined the UI and Fixed some bugs:
 ![Screenshot 2024-11-27 161552](https://github.com/user-attachments/assets/385d5908-2eb0-4bb2-a8f8-2a72bc6ba65f)
 
 Currently fixing the random string generator
+Update: None

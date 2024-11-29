@@ -22,7 +22,7 @@ def minimize_dfa(dfa):
 
 if __name__ == "__main__":
     # Example regex
-    regex = "a(bc)*"
+    regex = "(a|b)*a"
     
     # Generate NFA from regex
     nfa = regex_to_nfa(regex)
