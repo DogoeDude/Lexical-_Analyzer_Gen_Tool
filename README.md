@@ -26,5 +26,13 @@ Redefined the UI and Fixed some bugs:
 ![Screenshot 2024-11-27 161651](https://github.com/user-attachments/assets/b9a487b4-c9fe-4671-9b89-e1daf514c129)
 ![Screenshot 2024-11-27 161552](https://github.com/user-attachments/assets/385d5908-2eb0-4bb2-a8f8-2a72bc6ba65f)
 
+<<<<<<< HEAD
 Currently fixing the random string generator
 Update: None
+=======
+Have Fixed the Random Generation bug:
+
+![image](https://github.com/user-attachments/assets/2eec69c6-196a-4169-876e-95d517fd0463)
+
+But to get random code generated, the string maximum length should be less than or equal to 6 only.
+>>>>>>> ac068d363a24c6e25e4985381f854eac073fbe3f
